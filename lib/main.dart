@@ -2,6 +2,7 @@ import 'package:flutter_easyloading/flutter_easyloading.dart';
 import 'package:provider/provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_web_plugins/url_strategy.dart';
@@ -65,6 +66,12 @@ class _MyAppState extends State<MyApp> {
     super.initState();
 
     _appStateNotifier = AppStateNotifier.instance;
+    
+    // 立即初始化用户状态，避免黑屏
+    final currentFirebaseUser = FirebaseAuth.instance.currentUser;
+    final initialUser = NxttWalletFirebaseUser.fromFirebaseUser(currentFirebaseUser);
+    _appStateNotifier.update(initialUser);
+    
     _router = createRouter(_appStateNotifier);
     userStream = nxttWalletFirebaseUserStream()
       ..listen((user) {

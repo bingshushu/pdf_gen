@@ -39,8 +39,8 @@ class _LoginPageWidgetState extends State<LoginPageWidget>
     _model.passwordLoginFocusNode ??= FocusNode();
 
     if (kDebugMode) {
-      _model.passwordLoginTextController?.text = 'Jeke2025';
-      _model.emailAddressLoginTextController?.text = 'ecio551@163.com';
+      _model.passwordLoginTextController?.text = 'emma5000';
+      _model.emailAddressLoginTextController?.text = 'emma2026@tutamail.com';
     }
 
     animationsMap.addAll({

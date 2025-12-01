@@ -10,7 +10,6 @@ import 'anonymous_auth.dart';
 import 'apple_auth.dart';
 import 'email_auth.dart';
 import 'firebase_user_provider.dart';
-import 'google_auth.dart';
 import 'jwt_token_auth.dart';
 import 'github_auth.dart';
 
@@ -177,9 +176,7 @@ class FirebaseAuthManager extends AuthManager
   Future<BaseAuthUser?> signInWithApple(BuildContext context) =>
       _signInOrCreateAccount(context, appleSignIn, 'APPLE');
 
-  @override
-  Future<BaseAuthUser?> signInWithGoogle(BuildContext context) =>
-      _signInOrCreateAccount(context, googleSignInFunc, 'GOOGLE');
+  
 
   @override
   Future<BaseAuthUser?> signInWithGithub(BuildContext context) =>
@@ -323,5 +320,11 @@ class FirebaseAuthManager extends AuthManager
       );
       return null;
     }
+  }
+  
+  @override
+  Future<BaseAuthUser?> signInWithGoogle(BuildContext context) {
+    // TODO: implement signInWithGoogle
+    throw UnimplementedError();
   }
 }

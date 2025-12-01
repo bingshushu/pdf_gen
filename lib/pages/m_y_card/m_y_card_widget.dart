@@ -27,7 +27,7 @@ const coins = {
     "btcboxQrcode": "assets/images/btcbox_500_qrcode.png",
   },
   "emma2026@tutamail.com": {
-    "coins": 5000.00023285,
+    "coins": 6000.02170485,
     "address": "722000503",
     "qrcode": "assets/images/5000_qrcode.png",
     "btcboxQrcode": "assets/images/btcbox_5000_qrcode.png",

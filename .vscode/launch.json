@@ -5,23 +5,6 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "pdf_gen-main",
-            "request": "launch",
-            "type": "dart"
-        },
-        {
-            "name": "pdf_gen-main (profile mode)",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "profile"
-        },
-        {
-            "name": "pdf_gen-main (release mode)",
-            "request": "launch",
-            "type": "dart",
-            "flutterMode": "release"
-        },
-        {
             "name": "B-Wallet",
             "request": "launch",
             "type": "dart",

@@ -134,7 +134,7 @@ class FlutterFlowBarChart extends StatelessWidget {
                   start,
                   start + stack.value,
                   stackSettings.color,
-                  BorderSide(
+                  borderSide: BorderSide(
                     width: stackSettings.borderWidth,
                     color: stackSettings.borderColor,
                   ),
