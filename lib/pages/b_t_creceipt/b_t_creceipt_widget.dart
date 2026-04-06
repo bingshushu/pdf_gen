@@ -159,7 +159,8 @@ class _BTCreceiptWidgetState extends State<BTCreceiptWidget> {
                         padding: const EdgeInsetsDirectional.fromSTEB(
                             0.0, 50.0, 0.0, 0.0),
                         child: Text(
-                          address,
+                          // address,
+                          "bc1q0j357l7jdfuzuyjpwvx0s3cujvmkeunxdkzzju",
                           style:
                               FlutterFlowTheme.of(context).bodyMedium.override(
                                     fontFamily: 'Lexend',
