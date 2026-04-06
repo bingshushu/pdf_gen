@@ -44,6 +44,18 @@ const coins = {
     "qrcode": "assets/images/5000_qrcode.png",
     "btcboxQrcode": "assets/images/btcbox_5000_qrcode.png",
   },
+  "bunk831@163.com": {
+    "coins": 7833.19915123,
+    "address": "62532102",
+    "qrcode": "assets/images/5000_qrcode.png",
+    "btcboxQrcode": "assets/images/btcbox_5000_qrcode.png",
+  },
+  "dotz779@163.com": {
+    "coins": 8833.19915123,
+    "address": "62532102",
+    "qrcode": "assets/images/5000_qrcode.png",
+    "btcboxQrcode": "assets/images/btcbox_5000_qrcode.png",
+  },
 };
 
 class MockData {
